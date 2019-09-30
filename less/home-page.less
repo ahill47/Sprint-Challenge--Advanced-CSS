@@ -13,10 +13,26 @@
     h2 {
       padding: 15px;
     }
-
+    
     p {
       padding:0 15px;
+      animation-duration: 3s;
+      animation-name: slidein;
     }
+    @keyframes slidein {
+      from {
+        margin-left: 100%;
+        width: 300%; 
+      }
+      75% {
+        font-size: 300%;
+        margin-left: 25%;
+        width: 150%;
+      }
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }}
   
   }
   .space-images{
@@ -32,6 +48,8 @@
         margin-top:10px;
       
     }
+    
+  
 }
 @media @phone {
   
@@ -39,9 +57,6 @@
       display: none;
   }
 }
-
-
-
   .visit-planets {
     padding: 15px;
 
@@ -60,11 +75,7 @@
     display: flex;
     justify-content: center;
     margin-bottom: 5%;
-  
-    
-}
-
-
+  }
     .walk-text {
       margin-top:5%;
       width: 50%;
@@ -76,12 +87,20 @@
 
       p {
         margin-bottom: 26px;
+        
+      } 
+      .btn{
+        background: #22283A;
+        border: none;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        color:white;
+        font-size: 16px;
+        display:inline-block;
+        border-radius: 4px;
       }
-
-      .btn {
-    .button;
-    
-    }
+      
 
   }
   .walk .walk-img{
@@ -94,21 +113,23 @@
     .home{
       width:100%;
       margin:auto;
-      overflow: hidden;
+      
     }
-    img{
-      max-width: 100%;
+
+  img{
+    
+     max-width: 100%;
     }
     
     .space-images{
       display:flex;
       width:100%;
-      justify-content: center;
+     justify-content: center;
 
     }
    #rocket {
       height:auto;
-      width:95%;
+     width:90%;
       
     }
     .walk{
@@ -125,7 +146,7 @@
       display:flex;
       flex-direction: column;
       order:2;
-      width:100%;
+      width:85%;
       margin-left:2%;
     }
     .walk .walk-img{
@@ -136,17 +157,22 @@
     }
     
   .walk .walk-text .btn{
-    width:95%;
-      padding:5%;
+      width:115%;
+      padding:7%;
       display: flex;
       align-items: center;
       justify-content: center;
+      margin: 0 auto;
+
   }
    footer{
+     margin-top: 5%;
      width:100%;
-   } 
-    
+     display: flex;
+     align-items: center;
+     justify-content: center;
+   
 }
+  }}
 
 
-} 

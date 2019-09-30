@@ -43,7 +43,7 @@ Allows us to declare a baseline saying that we'll take 1em as 10px
 4. How would you describe preprocessing to someone new to CSS?
 It's just a way to keep your CSS index file clean.
 Everything is sorted in its own file instead of one big css index file.
-Its kind of like class in OOP.
+Its kind of like classes in OOP.
 
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?

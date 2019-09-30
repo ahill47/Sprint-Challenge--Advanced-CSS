@@ -224,6 +224,23 @@ p {
 }
 .home .intro p {
   padding: 0 15px;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  75% {
+    font-size: 300%;
+    margin-left: 25%;
+    width: 150%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 .home .space-images {
   display: flex;
@@ -269,17 +286,15 @@ p {
   margin-bottom: 26px;
 }
 .home .walk-text .btn {
-  font-size: 2rem;
-  cursor: pointer;
-  border-radius: 5px;
-  padding: 5px 10px;
-  width: 30%;
+  background: #22283A;
+  border: none;
+  padding: 15px 32px;
   text-align: center;
-  background-color: #22283A;
+  text-decoration: none;
   color: white;
-}
-.home .walk-text .btn:hover {
-  border: 1px solid #23293B;
+  font-size: 16px;
+  display: inline-block;
+  border-radius: 4px;
 }
 .home .walk .walk-img {
   margin-top: 5%;
@@ -291,7 +306,6 @@ p {
   .home .home {
     width: 100%;
     margin: auto;
-    overflow: hidden;
   }
   .home img {
     max-width: 100%;
@@ -303,7 +317,7 @@ p {
   }
   .home #rocket {
     height: auto;
-    width: 95%;
+    width: 90%;
   }
   .home .walk {
     height: auto;
@@ -316,7 +330,7 @@ p {
     display: flex;
     flex-direction: column;
     order: 2;
-    width: 100%;
+    width: 85%;
     margin-left: 2%;
   }
   .home .walk .walk-img {
@@ -325,14 +339,19 @@ p {
     margin-left: 2%;
   }
   .home .walk .walk-text .btn {
-    width: 95%;
-    padding: 5%;
+    width: 115%;
+    padding: 7%;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
   }
   .home footer {
+    margin-top: 5%;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 footer {
