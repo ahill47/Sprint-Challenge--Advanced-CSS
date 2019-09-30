@@ -1,1 +1,20 @@
-// Mixins Here
+.button{
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: 30%;
+    text-align: center;
+    background-color: @btn-bg-color;
+    color:white;
+    
+
+    &:hover {
+        border: 1px solid @ebony-clay;
+
+    }
+}
+
+@media @phone {
+        max-width: 500px;
+    }
